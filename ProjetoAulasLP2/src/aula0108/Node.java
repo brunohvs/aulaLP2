@@ -20,7 +20,7 @@ public class Node {
 		this.setNo(n);
 	}
 	public void set26(int n) {
-		if (n == 0)
+		if (n < 0)
 		{
 			return;
 		}
@@ -34,26 +34,21 @@ public class Node {
 	}
 	public int seek(int n) {
 		
-		if(this.no.equals(null))
-		{
-			return n;
-		}
 		Node a= this.getNo();
 		
 		if(n==0)
 	    {
-			a = this.getNo();
+			
 			this.setNo(a.getNo());
-	    	if(a.equals(null)) {
-	    	return (this.getX()-(2*this.getX()));}
-	    	return (a.getX()-(2*a.getX()));
+	    	
+	    	return a.getX();
 	    }
 		 
 		else
 		{
 			
-			
-			return this.no.seek(n-1);
+			System.out.println(n);
+			return a.seek(n-1);
 		}
 	}
 
