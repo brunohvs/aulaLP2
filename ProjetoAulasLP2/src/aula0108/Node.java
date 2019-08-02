@@ -27,7 +27,7 @@ public class Node {
 		else 
 		{ 
 			Node novo = new Node();
-			this.setX(n);
+			this.setX(30-n);
 			this.setNo(novo);
 			this.no.set26(n-1);
 		}
@@ -47,7 +47,7 @@ public class Node {
 		else
 		{
 			
-			System.out.println(n);
+			
 			return a.seek(n-1);
 		}
 	}
