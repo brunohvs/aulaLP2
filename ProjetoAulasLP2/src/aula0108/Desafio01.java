@@ -10,9 +10,10 @@ public class Desafio01 {
 		
 		long tempoSemPrint = 0;
 		long tempoComPrint = 0;
-		long tempoInicial = System.nanoTime();
+		
 		root.set26(30);
 		int matriz[][]= new int[5][5];
+		long tempoInicial = System.nanoTime();
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 5; j++) {
 				x= (int)(Math.random()*(26-y));
